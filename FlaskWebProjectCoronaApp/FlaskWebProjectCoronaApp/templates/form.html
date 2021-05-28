@@ -1,0 +1,17 @@
+﻿{% extends "base.html" %} <!-- Flask-Syntax, kein HTML ! -->
+{% block content %}
+<h1>Meine Körpertemperatur heute</h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.date.label }}<br>
+        {{ form.date(size=32) }}
+    </p>
+    <p>
+        {{ form.temp.label }}<br>
+        {{ form.temp(size=32) }}
+    </p>
+    <p>{{ form.signature() }} {{ form.signature.label }}</p>
+    <p>{{ form.submit() }}</p> <!-- Formulardaten übermitteln -->
+</form>
+{% endblock %}
