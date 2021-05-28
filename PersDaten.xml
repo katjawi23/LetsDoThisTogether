@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Coronabezogene Daten"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity= "center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <TextView
+        android:text="Vorgeschichte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/VorgeschichteTextView" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupVorgeschichte">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="positiv getestet"
+            android:id="@+id/rBtnPos" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="negativ getestet"
+            android:id="@+id/rBtnNeg" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weiß nicht"
+            android:id="@+id/rBtnIdk" />
+    </RadioGroup>
+    <TextView
+        android:text="Verlauf (wenn positiv getestet)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupVerlauf">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="leicht (z.B. keine Symptome)"
+            android:id="@+id/rBtnLeicht" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mittel (z.B. mehrere Tage zu Hause ausgenockt)"
+            android:id="@+id/rBtnMittel" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="schwer (z.B. Krankenhausaufenthalt)"
+            android:id="@+id/rBtnSchwer" />
+    </RadioGroup>
+    <TextView
+        android:text="Wann war der letzte Arztbesuch?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtArztbesuch" />
+    <TextView
+        android:text="Corona-Impfung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupImpfung">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="nein"
+            android:id="@+id/rBtnNeinImpf" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="eine von zwei Impfungen"
+            android:id="@+id/rBtnJaImpf" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="erfolgreich abgeschlossen"
+            android:id="@+id/rBtnJaImpfE" />
+    </RadioGroup>
+    <TextView
+        android:text="Impfstoff (falls zutreffend)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtImpfstoff"
+        android:hint="z.B. AstraZeneca"/>
+    <Button
+        android:text="Weiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPersWeiter" />
+</LinearLayout>

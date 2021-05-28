@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <TextView
+            android:text="Symptome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:gravity="center"
+            android:id="@+id/Symp1TextView" />
+        <TextView
+        android:text="erhöhte Temperatur/Fieber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTemperatur"
+            android:hint="z.B. 38.7"/>
+        <TextView
+            android:text="Bitte kreuzen Sie die zutreffenden Symptome an:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1" 
+        android:verticalScrollbarPosition="right">
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <CheckBox
+            android:text="Halsschmerzen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBHalzschmerzen" />
+        <CheckBox
+            android:text="Schnupfen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBSchnupfen" />
+        <CheckBox
+            android:text="Schüttelfrost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBSchüttelfrost" />
+        <CheckBox
+            android:text="Kurzatmigkeit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBKurzatmigkeit" />
+        <CheckBox
+            android:text="Atemnot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBAtemnot" />
+        <CheckBox
+            android:text="allgemeine Schwäche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBSchwäche" />
+        <CheckBox
+            android:text="Ermüdungserscheinungen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBErmüdung" />
+        <CheckBox
+            android:text="Gliederschmerzen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBGliederschmerzen" />
+        <CheckBox
+            android:text="Bindehautenzündung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBBindehaut" />
+        <CheckBox
+            android:text="Magen-Darm-Beschwerden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBMagenDarm" />
+        <CheckBox
+            android:text="Hautausschlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cBHautausschlag" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trockener Husten"
+            android:id="@+id/cBTrockenerHusten"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="produktiver Husten"
+            android:id="@+id/cBProduktiverHusten"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="eingeschränkter Geruchssinn"
+            android:id="@+id/cBGeruchssinn"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="eingeschränkter Geschmacksinn"
+            android:id="@+id/cBGeschmacksinn"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kopfschmerzen"
+            android:id="@+id/cBKopfschmerzen"/>
+        <Button
+            android:text="Senden"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSend" />
+        </LinearLayout>
+    
+    
+    </ScrollView>
+</LinearLayout>

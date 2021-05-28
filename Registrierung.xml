@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Registrierung"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegistTextView"
+        android:gravity= "center"/>
+
+    <TextView
+        android:text="Benutzername (Pseudonym)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/BenutzTextView" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPseudonym"
+        android:hint="z.B. Spongebob"/>
+    <TextView
+        android:text="Geburtsdatum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeburtTextView" />
+    <EditText
+        android:inputType="date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtGeburtsdatum"
+        />
+    <TextView
+        android:text="Geschlecht"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeschlechtTextView" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroupGeschlecht">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Männlich"
+            android:id="@+id/rBtnMan" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weiblich"
+            android:id="@+id/rBtnWoman" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Divers"
+            android:id="@+id/rBtnDivers" />
+    </RadioGroup>
+    <TextView
+        android:text="Postleitzahl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PostTextView" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPostleitzahl"
+        android:hint="z.B. 73450"/>
+    <Button
+        android:text="Registrieren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister" />
+
+</LinearLayout>
